@@ -79,7 +79,10 @@
 	Если ЗначениеЗаполнено( Параметры["slack_WebhookURL"] ) Тогда
 
 		ОтправкаВSlack = Новый ОтправкаВSlack;
-		ОтправкаВSlack.Инициализировать( Параметры["slack_WebhookURL"], Параметры["slack_channel"], Параметры["slack_username"], Параметры["slack_icon_emoji"]);
+		ОтправкаВSlack.Инициализировать( Параметры["slack_WebhookURL"], 
+			Параметры["slack_channel"], 
+			Параметры["slack_username"], 
+			Параметры["slack_icon_emoji"]);
 
 		Замер.УстановитьОтправкуВSlack( ОтправкаВSlack );
 
